@@ -1,0 +1,12 @@
+$white: #FFFFFF;
+$black: #1a1a1a;
+$super_black: #000000;
+$grey: #cccccc;
+$text_grey: #575757;
+$dark_grey: #333;
+
+@import "global";
+@import "header";
+@import "app";
+@import "hero";
+@import "footer";

@@ -1,0 +1,79 @@
+#root,
+#root-details {
+  @extend %center-block;
+  min-height: 60vh;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 50px auto;
+}
+
+.info-container {
+  background: $black;
+  color: $grey;
+  padding: 30px;
+  border-radius: 4px;
+  margin-top: 50px;
+  max-width: 448px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  background: $black;
+  color: $grey;
+  padding: 30px;
+  border: 1px solid $dark_grey;
+  border-radius: 4px;
+
+  @at-root #catalogue-page & {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background: $super_black;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+
+.portrait {
+  border-radius: 100%;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  @at-root #catalogue-page & {
+    width: 150px;
+    height: 150px;
+  }
+  @at-root #detail-page & {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card  {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

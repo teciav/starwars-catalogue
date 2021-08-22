@@ -1,0 +1,48 @@
+.hero {
+  width: 100%;
+  background-color: $black;
+  padding: 50px 20px;
+}
+
+.greetings-container {
+  margin-bottom: 60px;
+  @extend %center-block;
+
+  .text-container {
+    max-width: 50%;
+  }
+}
+
+.search-container {
+   @extend %center-block;
+ }
+
+#search-box {
+  padding: 10px 0;
+  width: 50%;
+  border-bottom: 1px solid $text_grey;
+  font-family: 'Blinker', sans-serif;
+  color: $grey;
+  &::placeholder {
+    color: $text_grey;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    padding-top: 30px;
+  }
+
+  #search-box {
+    width: 70%;
+  }
+
+  .greetings-container {
+    margin-bottom: 30px;
+
+    .text-container  {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+}

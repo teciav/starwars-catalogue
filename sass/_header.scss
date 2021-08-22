@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $super_black;
+  padding: 45px 0;
+}
+
+.logo {
+  width: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 180px;
+  }
+}
