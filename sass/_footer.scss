@@ -11,3 +11,9 @@ footer {
   cursor: pointer;
   width: 150px;
 }
+
+@include responsiveMax(470px) {
+  footer{
+    padding: 20px 0;
+  }
+}

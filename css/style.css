@@ -37,7 +37,7 @@ table {
 }
 
 body {
-  background: url(../assets/background.jpeg) center/50% repeat;
+  background: url(../assets/background.jpeg) center/60% repeat;
   font-family: "Blinker", sans-serif;
   color: #cccccc;
 }
@@ -67,7 +67,7 @@ header {
     width: 250px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 470px) {
   .logo {
     width: 180px;
   }
@@ -90,10 +90,8 @@ header {
   color: #cccccc;
   padding: 30px;
   border-radius: 4px;
-  margin-top: 50px;
   max-width: 448px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 50px auto;
 }
 
 .card {
@@ -202,4 +200,10 @@ footer {
 .contact {
   cursor: pointer;
   width: 150px;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding: 20px 0;
+  }
 }

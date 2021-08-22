@@ -10,13 +10,13 @@ header {
   width: 300px;
 }
 
-@media only screen and (max-width: 800px) {
+@include responsiveMax(800px)  {
   .logo {
     width: 250px;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@include responsiveMax(470px)  {
   .logo {
     width: 180px;
   }
