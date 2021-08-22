@@ -1,7 +1,7 @@
 #root,
 #root-details {
   @extend %center-block;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .cards-container {
@@ -55,18 +55,19 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@include responsiveMax(1000px) {
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 700px) {
+
+@include responsiveMax(700px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 470px) {
+@include responsiveMax(470px) {
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }

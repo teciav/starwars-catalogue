@@ -10,13 +10,13 @@ header {
   width: 300px;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .logo {
     width: 250px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .logo {
     width: 180px;
   }
